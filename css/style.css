@@ -1,0 +1,420 @@
+@font-face {
+  font-family: "Washington"; 
+  src: url(../fonts/washingtonthin-rpape.ttf) format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+@font-face {
+  font-family: "akony"; 
+  src: url(../fonts/akony-bold.ttf) format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: overlay;
+    font-weight: 100;
+}
+
+section{
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    max-width: 700px;
+    min-width: 700px;
+    padding-bottom: 670px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    
+}
+
+
+
+.program{
+
+    height: 900px;
+
+
+}
+
+
+.li-program{
+
+
+    padding-top: 40px;
+
+
+}
+
+.ul-program{
+    text-align: center;
+    list-style-type: none;
+
+}
+
+.title-program{
+
+    padding-top: 30px;
+    font-family: "akony"; 
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;   
+
+
+}
+
+
+.img-program{
+
+    height: 170px;
+    scale: 1;
+    transition: transform 0.5s ease;
+    border-radius: 500px;
+
+}
+
+.img-program:hover,
+.img-program:focus,
+.img-program:active,
+.img-program:visited
+ {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+     box-shadow: 10px 10px 30px rgba(212, 27, 218, 0.7), /* Тень при наведении, первый цвет - синий */
+              -10px -10px 30px rgba(255, 0, 128, 0.7); /* Второй цвет - розовый */
+  /* Добавим градиентную тень */
+  /* linear-gradient(to right, rgba(0, 128, 255, 0.7), rgba(255, 0, 128, 0.7)); */
+
+    
+}
+
+
+.first_text {
+
+    padding-left: 130px;
+    padding-bottom: 180px;
+  position: relative;
+  display: inline-block;
+
+  padding-right: 120px; /* место для второй части */
+  font-weight: 100;
+    
+}
+
+.second_text {
+    position: absolute;
+    right: 210px;
+    bottom:170px;
+    font-size: 17px;
+    white-space: nowrap;
+    font-weight: 100;
+    text-align: center;
+}
+
+.third_text {
+    position: absolute;
+    right: 420px;
+    bottom: 40px;
+    font-size: 17px;
+    white-space: nowrap;
+    font-weight: 800;
+    line-height:1;
+    text-align: center;
+    font-family: "akony"; 
+    transition: 1s;
+}
+
+.fouth_text {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+    font-size: 17px;
+    white-space: nowrap;
+    font-weight: 800;
+    line-height:1;
+    text-align: center;
+    font-family: "akony"; 
+    transition: 1s;
+}
+
+
+.a-main{
+
+
+        background: linear-gradient(90deg, #000000, #78203d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: 1s;
+    transform:font-size 1s ease;
+
+
+
+
+}
+
+.third_text:hover, .fouth_text:hover{
+    background: linear-gradient(90deg, #000000, #78203d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    scale: 1.2;
+    transition: 1s;
+
+}
+
+
+
+.center{
+
+    text-align: center;
+}
+
+.discription{
+    position:absolute;
+    position: 30px 20px;
+
+}
+
+.title{
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+    font-size: 110px;
+    font-family: "Washington";
+    font-weight: 100;
+}
+
+.main-img{
+
+    background-image: url(../images/main.png);
+    background-size: 120%;
+    background-position: -70px -30px;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+}
+
+
+.title-about{
+    font-family: "akony"; 
+        margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+
+}
+
+.about-text{
+
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+.about{
+    background-image: url(../images/about.PNG);
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* Гибкий размер по ширине */
+    background-position: bottom center; /* Четко вниз */
+    padding-bottom: 400px; /* Высота фона + отступ */
+    position: relative;
+    min-height: auto; /* Убираем фиксированную высоту */
+
+
+}
+
+.title-what-await-you{
+
+        font-family: "akony"; 
+        margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+
+}
+
+.what-await-you{
+    background-image: url(../images/what-await-you.PNG);
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* Гибкий размер по ширине */
+    background-position: bottom center; /* Четко вниз */
+    padding-bottom: 330px; /* Высота фона + отступ */
+    position: relative;
+    min-height: auto; /* Убираем фиксированную высоту */
+}
+
+
+
+.what-await-you-text{
+
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+
+.ul-wau{
+
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-weight: 100;
+}
+
+
+.right {
+    padding-right: 30px;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+
+.left {
+    padding-left: 30px;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+            .course-subtitle-left {
+                font-size: 18px;
+                font-weight: 100;
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            .course-duration-left {
+                font-size: 14px;
+                font-weight: 100;
+                padding-bottom: 10px;
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .section-title-left {
+                font-weight: 100;
+                font-size: 18px;
+                text-align: center;
+                padding-bottom: 10px;
+                
+            }
+            .price-left {
+                font-size: 24px;
+                font-weight: 100;
+                margin-top: 180px;
+            }
+
+
+.course-title-left, .course-title-right {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+             text-align: center;
+             
+
+        }
+        .course-subtitle-right {
+            font-size: 18px;
+            font-weight: 100;
+             text-align: center;
+             padding-bottom: 10px;
+        }
+        .course-duration-right {
+            font-size: 14px;
+            font-weight: 100;
+             padding-bottom: 10px;
+             text-align: center;
+        }
+        .section-title-right {
+            font-weight: 100;
+            font-size: 18px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        .price-right {
+            font-size: 24px;
+            font-weight: 100;
+            margin-top: 25px;
+        }
+
+
+
+.training{
+    
+    justify-content: space-between;
+    display: flex;
+    height: 1300px;
+    
+}
+
+
+.left-img, .right-img{
+    
+    height: 410px;
+    border-radius: 15px;
+    width: 295px;
+    
+}
+
+
+.li-training{
+    
+    
+    padding-bottom: 10px;
+    
+}
+
+
+a{
+
+      color: inherit;         /* Наследует цвет текста от родителя */
+  text-decoration: none;  /* Убирает подчеркивание */
+  cursor: pointer;        /* Курсор в виде указателя */
+  
+  /* Дополнительно можно сбросить другие свойства */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+a:hover, 
+a:focus, 
+a:active, 
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+
