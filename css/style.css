@@ -367,7 +367,7 @@ section{
     
     justify-content: space-between;
     display: flex;
-    height: 1300px;
+    height: 1410px;
     
 }
 
@@ -386,6 +386,76 @@ section{
     
     padding-bottom: 10px;
     
+}
+
+
+
+
+.sign-up {
+    text-align: center;
+    margin-top: 40px;
+  margin-left: 205px;
+  padding: 18px 60px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  font-size: 22px;
+}
+.sign-up::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+/* glow */
+.sign-up::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 30px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+.sign-up:hover::before {
+  opacity: 1;
+}
+
+.sign-up:active:after {
+  background: transparent;
+}
+
+.sign-up:active {
+  color: #000;
+  font-weight: bold;
 }
 
 
